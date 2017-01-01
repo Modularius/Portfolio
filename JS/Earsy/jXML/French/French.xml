@@ -1,0 +1,108 @@
+//(function(){xmlCacheC = $('<?xml version="1.0" encoding="utf-8" ?>
+xmlCache["courses"] = <data>
+	<head>
+		<Good>C'est Super!</Good>
+		<Bad></Bad>
+	</head>
+	<course name = "Vocabulary">
+		<module id = "Vocabulary1" name = "Everyday Words and Phrases">
+			<lesson id = "Greetings1" name = "Greetings"/>
+			<lesson id = "SimpleWords1" name = "Simple Words"/>
+			<lesson id = "CallsForHelp1" name = "Calls For Help"/>
+			<lesson id = "OrderingFood1" name = "Ordering Food"/>
+		</module>
+		
+		<module id = "NounsAndPronouns" name = "Nouns and Pronouns">
+			<lesson id = "HouseholdObjects1" name = "Household Objects"/>
+			<lesson id = "People1" name = "People"/>
+			<lesson id = "Food1" name = "Food"/>
+			<lesson id = "Plurals1" name = "Plurals"/>
+			<lesson id = "Animals1" name = "Animals"/>
+			<lesson id = "Articles1" name = "Articles"/>
+			<lesson id = "PersonalPronouns1" name = "Personal Pronouns"/>
+			<lesson id = "Emotions1" name = "Emotions"/>
+			<lesson id = "IrregularPlurals1" name = "Irregular Plurals"/>
+			<lesson id = "DemonstrativePronouns1" name = "Demonstrative Pronouns"/>
+		</module>
+		
+		<module id = "Verbs" name = "Verbs">
+			<lesson id = "EverydayVerbs1" name = "Everyday Verbs"/>
+			<lesson id = "Conjugation1" name = "Conjugation 1"/>
+			<lesson id = "EtreAvoir1" name = "Irregular Verbs Etre and Avoir"/>
+			<lesson id = "PastTense1" name = "Past Tense"/>
+			<lesson id = "CompoundTense1" name = "Compound Tense"/>
+			<lesson id = "IrregularVerbs2" name = "Irregular Verbs 2"/>
+		</module>
+		
+		<module id = "AdjectivesAndAdverbs" name = "Adjectives and Adverbs">
+			<lesson id = "Colours1" name = "Colours"/>
+			<lesson id = "Size1" name = "Size"/>
+			<lesson id = "LocationMovement1" name = "Location and Movement"/>
+			<lesson id = "Emotions1" name = "Emotions"/>
+			<lesson id = "AdjectivePlurals1" name = "Plurals"/>
+		</module>
+		
+		<module id = "PeopleAndPlaces" name = "People and Places">
+			<lesson id = "Family1" name = "Family"/>
+			<lesson id = "Buildings1" name = "Buildings"/>
+			<lesson id = "HousesRooms1" name = "Houses and Rooms"/>
+			<lesson id = "Jobs1" name = "Jobs"/>
+			<lesson id = "Holidays1" name = "Holidays"/>
+			<lesson id = "Countries1" name = "Countries"/>
+			<lesson id = "Buildings1" name = "Buildings"/>
+		</module>
+		
+		<module id = "Numbers" name = "Numbers">
+			<lesson id = "NumberVocab1" name = "Number Vocab"/>
+			<lesson id = "Money1" name = "Money"/>
+			<lesson id = "Fractions1" name = "Fractions"/>
+			<lesson id = "Time1" name = "Time"/>
+			<lesson id = "Ordinals1" name = "Ordinals"/>
+			<lesson id = "Arithmetic1" name = "Arithmetic"/>
+			<lesson id = "Scientific1" name = "Scientific"/>
+		</module>
+		
+		<module id = "DatesAndTime" name = "Dates and Time">
+			<lesson id = "TimeOfDay1" name = "Time of Day"/>
+			<lesson id = "DaysMonths1" name = "Days and Months"/>
+			<lesson id = "SeasonsYears1" name = "Seasons and Years"/>
+		</module>
+	</course>
+	
+	<course name = "Nouns, Verbs and Sentences">
+		<module id = "EverydayPhrases" name = "Everyday Phrases">
+			<lesson id = "OrderingFood2" name = "Ordering Food"/>
+			<lesson id = "BuyingItems1" name = "Buying Items"/>
+			<lesson id = "Complaints1" name = "Complaints"/>
+		</module>
+		<module id = "Introductions" name = "Introductions">
+			<lesson id = "Intros1" name = "Introductions"/>
+			<lesson id = "AgesHome1" name = "Ages and Home"/>
+			<lesson id = "Jobs2" name = "Jobs and Interviews"/>
+		</module>
+		<module id = "Directions" name = "Directions">
+			
+		</module>
+		<module id = "PastTense2" name = "Past Tense">
+			
+		</module>
+		<module id = "PastTense3" name = "Past and Future Tense">
+			
+		</module>
+		<module id = "QuestionsAnswers1" name = "Questions and Answers">
+			
+		</module>
+	</course>
+	
+	<course name = "Conversations">
+		<module id = "EverydayConvos" name = "Everyday Conversations">
+			<lesson id = "Intros2" name = "Introductions"/>
+		</module>
+	</course>
+	
+	<course name = "Advanced">
+	</course>
+</data>;
+//')
+//})();
+//console.log(xml);

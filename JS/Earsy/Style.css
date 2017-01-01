@@ -1,0 +1,13 @@
+div.placeholder-title {
+	text-align: center;
+};
+div.pagetitle {
+	border-top-style: dotted;
+	border-right-style: solid;
+	border-bottom-style: dotted;
+	border-left-style: solid;
+};
+div.placeholder-copywrite {
+	color: green;
+	align:center;
+}

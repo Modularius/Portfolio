@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<question class = "find-noun find-pronoun find-info">
+		<sentence>
+			<parse id = "1"><pronoun/> <verb inf = "manger"/></parse>
+			<parse id = "2" type = "par"><article/> <noun category = "food"/></parse>
+		</sentence>
+		<sentence>
+			<parse id = "1"><pronoun/> <verb inf = "détester"/></parse>
+			<parse>des aliments, mais</parse>
+			<parse src = "1"><pronoun/> <verb inf = "manger"/></parse>
+			<parse id = "2" type = "par"><article/> <noun category = "food"/></parse>
+		</sentence>
+		<sentence>
+			<parse id = "1"><pronoun/> <verb inf = "aimer"/></parse>
+			<parse>manger</parse>
+			<parse id = "2" type = "par"><article/> <noun category = "food"/></parse>
+		</sentence>
+		<game class = "find-noun find-info">
+			<instructions>What is the food being eaten?</instructions>
+			<ans>
+				<parse src = "2"><article/> <noun category = "food"/></parse>
+			</ans>
+		</game>
+		<game class = "find-pronoun">
+			<instructions>Identify the pronoun.</instructions>
+			<ans>
+				<parse src = "1"><pronoun/></parse>
+			</ans>
+		</game>
+	</question>
+	
+	<question class = "find-noun find-pronoun find-number find-info">
+		<sentence>
+			<parse id = "1">Ou <verb inf = "pouvoir"/> <pronoun/> acheter</parse>
+			<parse id = "num" gender = "m"> <op><number num = "1"/> billet|<number from = "2" to = "15"/> billets|<number from = "2" to = "15"/> billets|<number from = "5" to = "20"/> billets</op></parse>
+			<parse id = "2" type = "def">à <article/> <noun category = "attractions"/></parse>
+		</sentence>
+		<game class = "find-pronoun">
+			<instructions>Identify the pronoun.</instructions>
+			<ans>
+				<parse src = "1"><pronoun/></parse>
+			</ans>
+		</game>
+		<game class = "find-noun find-info">
+			<instructions>What is the ticket being bought for?</instructions>
+			<ans>
+				<parse src = "2"><article/> <noun category = "attractions"/></parse>
+			</ans>
+		</game>
+		<game class = "find-number">
+			<instructions>How many tickets have been bought?</instructions>
+			<ans>
+				<parse src = "num"><number from = "1" to = "15"/></parse>
+			</ans>
+		</game>
+	</question>
+	
+	<question class = "find-info find-pronoun find-adjective">
+		<randomglobal id = "compliment"><g eng = "pretty">joli</g><g eng = "interesting">intéressant</g><g eng = "beautiful">beau</g></randomglobal>
+		<randomglobal id = "activity"><g eng = "a drink">un verre</g><g eng = "to dance">danser</g><g eng = "come home with me">venir chez moi</g></randomglobal>
+		<sentence>
+			<parse id = "1" person = "2" number = "sing plur">Bonjour, <pronoun/> <verb inf = "être"/> très</parse>
+			<parse id = "2"><global name = "compliment"/>.</parse>
+			<parse id = "3" src = "1"><verb inf = "vouloir"/>-<pronoun/> <global name = "activity"/>?</parse>
+		</sentence>
+		<game class = "find-pronoun">
+			<instructions>Identify the pronoun.</instructions>
+			<ans>
+				<parse src = "1"><pronoun/></parse>
+			</ans>
+		</game>
+		<game class = "find-info">
+			<instructions>Name the compliment</instructions>
+			<ans>
+				<parse src = "2">You are very <global name = "compliment" eng = "true"/>.</parse>
+			</ans>
+		</game>
+		<game class = "find-info">
+			<instructions>What are you asking?</instructions>
+			<ans>
+				<parse src = "3">Would you like <global name = "activity" eng = "true"/>?</parse>
+			</ans>
+		</game>
+	</question>
+	
+	<question class = "find-time find-number">
+		<randomglobal id = "time"><g eng = ":00"></g><g eng = ":30">et demie</g><g eng = ":15">et quart</g></randomglobal>
+		<sentence>
+			<parse id = "1" person = "3" number = "sing">Quelle heure est-<pronoun/>?</parse>
+			<parse id = "2" src = "1"><pronoun/> est <number from = "2" to = "12"/> heures <global name = "time"/>.</parse>
+		</sentence>
+		<game class = "find-time find-number">
+			<instructions>What time is it?</instructions>
+			<ans>
+				<parse src = "2">It is <number from = "2" to = "12"/><global name = "time" eng = "true"/>.</parse>
+			</ans>
+		</game>
+	</question>
+	
+	<question class = "find-time find-number">
+		<randomglobal id = "month"><g eng = "January">Janvier</g><g eng = "Feburary">Février</g><g eng = "April">Avril</g><g eng = "May">Mai</g><g eng = "October">octobre</g><g eng = "December">décembre</g></randomglobal>
+		<sentence>
+			<parse id = "1" person = "3" number = "sing"><op>Quelle date est-<pronoun/> aujourd'hui?|Quelle est la date</op>.</parse>
+			<parse id = "2">La date <op>est|d'aujourd'hui est</op> le <number from = "1" to = "28"/> <global name = "month"/>.</parse>
+		</sentence>
+		<game class = "find-time find-number">
+			<instructions>What is today's date?</instructions>
+			<ans>
+				<parse src = "2">It is <global name = "month" eng = "true"/> <number from = "1" to = "28"/>.</parse>
+			</ans>
+		</game>
+	</question>
+	
+	<question class = "find-info find-number">
+		<randomglobal id = "first"><g eng = "go left">Allez à gauche</g><g eng = "go right">Allez à droit</g><g eng = "go ahead">Allez de l'avent</g></randomglobal>
+		<randomglobal id = "second"><g eng = "go left">tourner à gauche</g><g eng = "go right">tourner à droit</g><g eng = "turn on to the country lane">tourner à la route de campagne</g><g eng = "turn on to the motorway">tourner sur l'autoroute</g></randomglobal>
+		
+		<sentence>Go left for three miles then turn right
+			<parse id = "1" person = "3" number = "sing"><global name = "first"/> pour <number from = "2" to = "20"/> kilomètres.</parse>
+			<parse id = "2">Puis <global name = "second"/>.</parse>
+		</sentence>
+		<game class = "find-info">
+			<instructions>What is the first direction?</instructions>
+			<ans>
+				<parse>First <global name = "first" eng = "true"/>.</parse>
+			</ans>
+		</game>
+		<game class = "find-info">
+			<instructions>What is the second direction?</instructions>
+			<ans>
+				<parse>Then <global name = "second" eng = "true"/>.</parse>
+			</ans>
+		</game>
+		<game class = "find-info find-number">
+			<instructions>How far between the first and second directions?</instructions>
+			<ans>
+				<parse src = "1"><number from = "2" to = "20"/> kilometers.</parse>
+			</ans>
+		</game>
+	</question>
+</data>

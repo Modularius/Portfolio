@@ -1,0 +1,214 @@
+(function(){xmlCache["vocab"] = '<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<pronoun>
+		<personal>
+			<sing fr-1 = "je" fr-2 = "tu" fr-3m = "il" fr-3f = "elle" en-1 = "I" en-2 = "you" en-3m = "he" en-3f = "she"/>
+			<plur fr-1 = "nous" fr-2 = "vous" fr-3m = "ils" fr-3f = "elles" en-1 = "we" en-2 = "you" en-3m = "they" en-3f = "they"/>
+		</personal>
+	</pronoun>
+	
+	<article id = "def">
+		<m> <sing>l<v>e</v></sing>	<plur>les</plur> </m>
+		<f> <sing>la</sing>			<plur>les</plur> </f>
+		<eng> <sing>the</sing>		<plur>the</plur>	</eng>
+	</article>
+	<article id = "indef">
+		<m> <sing>un</sing>			<plur>des</plur> </m>
+		<f> <sing>une</sing>		<plur>des</plur> </f>
+		<eng> <sing>a</sing>		<plur>some</plur>	</eng>
+	</article>
+	<article id = "par">
+		<m> <sing>d<v>u</v></sing> 	<plur>des</plur> </m>
+		<f> <sing>de la</sing> 		<plur>des</plur> </f>
+		<eng> <sing>some</sing>		<plur>some</plur>	</eng>
+	</article>
+	
+	<noun sing = "chien" plur = "" gender = "m" en-sing = "dog" en-plur = "" class = "animals pets"/>
+	<noun sing = "chienne" plur = "" gender = "f" en-sing = "dog" en-plur = "" class = "animals pets"/>
+	<noun sing = "chat" plur = "" gender = "m"	en-sing = "cat" en-plur = "cats" class = "animals pets"/>
+	<noun sing = "poisson" plur = "" gender = "m" en-sing = "fish" en-plur = "fish" class = "animals pets sea-creatures"/>
+	<noun sing = "cheval" plur = "chevaux" gender = "m" en-sing = "horse" en-plur = "" class = "animals pets irreg-plur"/>
+	<noun sing = "poney" plur = "" gender = "m" en-sing = "pony" en-plur = "ponies" class = "animals pets"/>
+	<noun sing = "lapin" plur = "" gender = "m" en-sing = "rabbit" en-plur = "" class = "animals pets"/>
+	<noun sing = "canard" plur = "" gender = "m" en-sing = "duck" en-plur = "" class = "animals pets"/>
+	<noun sing = "baleine" plur = "" gender = "f" en-sing = "whale" en-plur = "" class = "animals sea-creatures"/>
+	<noun sing = "dauphin" plur = "" gender = "m" en-sing = "dolphin" en-plur = "" class = "animals sea-creatures"/>
+	<noun sing = "pieuvre" plur = "" gender = "f" en-sing = "octopus" en-plur = "octopuses" class = "animals sea-creatures"/>
+	<noun sing = "poulpe" plur = "" gender = "m" en-sing = "octopus" en-plur = "octopuses" class = "animals sea-creatures"/>
+	<noun sing = "méduse" plur = "" gender = "f" en-sing = "jellyfish" en-plur = "jellyfish" class = "animals sea-creatures"/>
+	<noun sing = "anguille" plur = "" gender = "f" en-sing = "eel" en-plur = "" class = "animals sea-creatures"/>
+	<noun sing = "requin" plur = "" gender = "m" en-sing = "shark" en-plur = "" class = "animals sea-creatures"/>
+	<noun sing = "crabe" plur = "" gender = "m" en-sing = "crab" en-plur = "" class = "animals sea-creatures"/>
+	<noun sing = "serpent" plur = "" gender = "m" en-sing = "snake" en-plur = "" class = "animals pets"/>
+	<noun sing = "oiseau" plur = "oiseaux" gender = "m" en-sing = "bird" en-plur = "" class = "animals pets irreg-plur"/>
+	<noun sing = "hamster" plur = "" gender = "m" en-sing = "hamster" en-plur = "" class = "animals pets"/>
+	<noun sing = "souris" plur = "souris" gender = "f" en-sing = "mouse" en-plur = "mice" class = "animals pets irreg-plur"/>
+	<noun sing = "rat" plur = "" gender = "m" en-sing = "rat" en-plur = "" class = "animals pets"/>
+	<noun sing = "lézard" plur = "" gender = "m" en-sing = "lizard" en-plur = "" class = "animals pets"/>
+	<noun sing = "our" plur = "" vowel = "true" gender = "m" en-sing = "bear" en-plur = "" class = "animals"/>
+	<noun sing = "papillon" plur = "" gender = "m" en-sing = "butterfly" en-plur = "butterflies" class = "animals"/>
+	<noun sing = "abeille" plur = "" gender = "f" en-sing = "bee" vowel = "true" en-plur = "" class = "animals"/>
+	<noun sing = "animal" plur = "animaux" gender = "m" vowel = "true" en-sing = "animal" en-plur = "" en-vowel = "true" class = "animals irreg-plur"/>
+	<noun sing = "cochon" plur = "" gender = "m" en-sing = "pig" en-plur = "" class = "animals meat"/>
+	<noun sing = "porc" plur = "" gender = "m" en-sing = "pork" en-plur = "" class = "meat"/>
+	<noun sing = "boeuf" plur = "" gender = "m" en-sing = "beef" en-plur = "" class = "meat"/>
+	<noun sing = "jambon" plur = "" gender = "m" en-sing = "ham" en-plur = "" class = "meat"/>
+	<noun sing = "vache" plur = "" gender = "f" en-sing = "cow" en-plur = "" class = "animals meat"/>
+	<noun sing = "poulet" plur = "" gender = "m" en-sing = "chicken" en-plur = "" class = "animals meat"/>
+	<noun sing = "mouton" plur = "" gender = "m" en-sing = "sheep" en-plur = "sheep" class = "animals meat"/>
+	<noun sing = "carotte" plur = "" gender = "f" en-sing = "carrot" en-plur = "" class = "food vegetables"/>
+	<noun sing = "légume" plur = "légume" gender = "f" en-sing = "vegetable" en-plur = "" class = "food vegetables irreg-plur"/>
+	<noun sing = "harocot" plur = "" gender = "m" vowel = "true"  en-sing = "bean" en-plur = "" class = "food vegetables"/>
+	<noun sing = "oignon" plur = "" gender = "m" vowel = "true"  en-sing = "onion" en-plur = "" en-vowel = "true" class = "food vegetables"/>
+	<noun sing = "pois" plur = "pois" gender = "m" en-sing = "pea" en-plur = "" class = "food vegetables irreg-plur"/>
+	<noun sing = "céleri" plur = "" gender = "m" en-sing = "celery" en-plur = "celeries" class = "food vegetables"/>
+	<noun sing = "pomme de terre" plur = "pommes de terre" gender = "f" en-sing = "potato" en-plur = "" class = "food vegetables"/>
+	<noun sing = "concombre" plur = "" gender = "m" en-sing = "cucumber" en-plur = "" class = "food vegetables"/>
+	<noun sing = "eau" plur = "eaux" gender = "m" vowel = "true" en-sing = "water" en-plur = "" class = "drinks irreg-plur"/>
+	<noun sing = "thé" plur = "" gender = "m" en-sing = "tea" en-plur = "" class = "drinks"/>
+	<noun sing = "café" plur = "" gender = "m" en-sing = "coffee" en-plur = "" class = "drinks"/>
+	<noun sing = "bière" plur = "" gender = "f" en-sing = "beer" en-plur = "" class = "drinks alcohol"/>
+	<noun sing = "vin" plur = "" gender = "m" en-sing = "wine" en-plur = "" class = "drinks alcohol"/>
+	<noun sing = "homme" plur = "" gender = "m" vowel = "true" en-sing = "man" en-plur = "men" class = "people abstract"/>
+	<noun sing = "femme" plur = "" gender = "f" en-sing = "woman" en-plur = "women" class = "people abstract"/>
+	<noun sing = "femme" plur = "" gender = "f" en-sing = "wife" en-plur = "wives" class = "people family marriage"/>
+	<noun sing = "mari" plur = "" gender = "m" en-sing = "husband" en-plur = "" class = "people family marriage"/>
+	<noun sing = "enfant" plur = "" gender = "m" en-sing = "child" en-plur = "children" class = "people family abstract"/>
+	<noun sing = "fil" plur = "" gender = "m" en-sing = "son" en-plur = "" class = "people family abstract"/>
+	<noun sing = "fille" plur = "" gender = "f"	en-sing = "daughter" en-plur = "" class = "people family abstract"/>
+	<noun sing = "bébé" plur = "" gender = "m"	en-sing = "baby" en-plur = "babies" class = "people family abstract"/>
+	<noun sing = "chambre" plur = "" gender = "f" en-sing = "room" en-plur = "" class = "rooms"/>
+	<noun sing = "chambre à coucher" plur = "chambres à coucher" gender = "f" en-sing = "bedroom" en-plur = "" class = "rooms"/>
+	<noun sing = "cuisine" plur = "" gender = "f" en-sing = "kitchen" en-plur = "" class = "rooms"/>
+	<noun sing = "salon" plur = "" gender = "m" en-sing = "living room" en-plur = "" class = "rooms"/>
+	<noun sing = "salle à manger" plur = "salles à manger" gender = "f" en-sing = "dining room" en-plur = "" class = "rooms"/>
+	<noun sing = "cave" plur = "" gender = "f" en-sing = "cellar" en-plur = "" class = "rooms"/>
+	<noun sing = "grenier" plur = "" gender = "m" en-sing = "attic" en-plur = "" class = "rooms"/>
+	<noun sing = "couloir" plur = "" gender = "m" en-sing = "hallway" en-plur = "" class = "rooms"/>
+	<noun sing = "escalier" plur = "" vowel = "true" gender = "m" en-sing = "staircase" en-plur = "" class = "rooms"/>
+	<noun sing = "porte" plur = "" gender = "f" en-sing = "door" en-plur = "" class = "rooms furniture"/>
+	<noun sing = "cabinet" plur = "" gender = "m" en-sing = "cabinet" en-plur = "" class = "furniture"/>
+	<noun sing = "meuble" plur = "" gender = "f" en-sing = "cabinet" en-plur = "" class = "furniture"/>
+	<noun sing = "placard" plur = "" gender = "f" en-sing = "cupboard" en-plur = "" class = "furniture"/>
+	<noun sing = "fenêtre" plur = "" gender = "f" en-sing = "window" en-plur = "" class = "furniture"/>
+	<noun sing = "tapis" plur = "" gender = "m" en-sing = "carpet" en-plur = "" class = "furniture"/>
+	<noun sing = "rideau" plur = "rideaux" gender = "m" en-sing = "curtain" en-plur = "" class = "furniture irreg-plur"/>
+	<noun sing = "canapé" plur = "" gender = "m" en-sing = "sofa" en-plur = "" class = "furniture"/>
+	<noun sing = "chaise" plur = "" gender = "f" en-sing = "chair" en-plur = "" class = "furniture"/>
+	
+	<adjective m-sing = "rouge" m-plur = "" f-sing = "rouge" f-plur = "" en = "red" class = "colours"/>
+	<adjective m-sing = "bleu" m-plur = "bleu" f-sing = "bleue" f-plur = "bleu" en = "blue" class = "colours"/>
+	<adjective m-sing = "jaune" m-plur = "" f-sing = "jaune" f-plur = "" en = "yellow" class = "colours"/>
+	<adjective m-sing = "vert" m-plur = "" f-sing = "verte" f-plur = "" en = "green" class = "colours"/>
+	<adjective m-sing = "blanc" m-plur = "" f-sing = "blanche" f-plur = "" en = "white" class = "colours"/>
+	<adjective m-sing = "noir" m-plur = "" f-sing = "noire" f-plur = "" en = "black" class = "colours"/>
+	
+	<adjective m-sing = "grand" m-plur = "" f-sing = "" f-plur = "" en = "big" class = "sizes"/>
+	<adjective m-sing = "petit" m-plur = "" f-sing = "" f-plur = "" en = "small" class = "sizes"/>
+	
+	<adjective m-sing = "jeune" m-plur = "" f-sing = "jeune" f-plur = "" en = "young" class = "ages"/>
+	<adjective m-sing = "vieil" m-plur = "vieux" f-sing = "vieille" f-plur = "" en = "old" class = "ages"/>
+	
+	
+	<adjective m-sing = "heureux" m-plur = "" f-sing = "heureuse" f-plur = "" en = "happy" class = "feelings"/>
+	<adjective m-sing = "triste" m-plur = "" f-sing = "triste" f-plur = "" en = "sad" class = "feelings"/>
+	<adjective m-sing = "drôle" m-plur = "" f-sing = "drôle" f-plur = "" en = "funny" class = "feelings"/>
+	<adjective m-sing = "excité" m-plur = "" f-sing = "" f-plur = "" en = "excited" class = "feelings"/>
+	<adjective m-sing = "ennuyé" m-plur = "ennuient" f-sing = "ennuyé" f-plur = "ennuient" en = "bored" class = "feelings"/>
+	<adjective m-sing = "beau" m-plur = "beaux" f-sing = "belle" f-plur = "" en = "beautiful" class = "feelings looks"/>
+	<adjective m-sing = "ennuyeux" m-plur = "ennuyeux" f-sing = "ennuyeuse" f-plur = "" en = "boring" class = "looks"/>
+	<adjective m-sing = "joli" m-plur = "" f-sing = "" f-plur = "" en = "pretty" class = "looks"/>
+	<adjective m-sing = "laid" m-plur = "" f-sing = "" f-plur = "" en = "ugly" class = "looks"/>
+	<adjective m-sing = "ordinaire" m-plur = "" f-sing = "ordinaire" f-plur = "" en = "plain" class = "looks"/>
+	<adjective m-sing = "excitant" m-plur = "" f-sing = "" f-plur = "" en = "exciting" class = "looks"/>
+	
+	<verb inf = "marcher" stem = "march" conj = "er" en-1 = "walk" en-3 = "" class = "movement walks"/>
+	<verb inf = "courer" stem = "cour" conj = "ir" en-1 = "run" en-3 = "" class = "movement walks"/>
+	<verb inf = "danser" stem = "dans" conj = "er" en-1 = "dance" en-3 = "" class = "movement walks"/>
+	<verb inf = "ramper" stem = "ramp" conj = "er" en-1 = "crawl" en-3 = "" class = "movement walks"/>
+	<verb inf = "tomber" stem = "tomb" conj = "er" en-1 = "fall" en-3 = "" class = "movement"/>
+	<verb inf = "voler" stem = "vol" conj = "er" en-1 = "fly" en-3 = "flies" class = "movement"/>
+	<verb inf = "lancer" stem = "lanc" conj = "er" en-1 = "throw" en-3 = "" class = "movement"/>
+	<verb inf = "retourner" stem = "retourn" conj = "er" en-1 = "return" en-3 = "" class = "movement"/>
+	<verb inf = "tourner" stem = "tourn" conj = "er" en-1 = "turn" en-3 = "" class = "movement"/>
+	
+	<verb inf = "grimacer" stem = "grimac" conj = "er" en-1 = "grimace" en-3 = "" class = "facial"/>
+	<verb inf = "sourire" stem = "souri" conj = "re" en-1 = "smile" en-3 = "" class = "facial"/>
+	<verb inf = "parler" stem = "parl" conj = "er" en-1 = "speak" en-3 = "" class = "facial"/>
+	<verb inf = "pleurer" stem = "pleur" conj = "er" en-1 = "cry" en-3 = "cries" class = "facial"/>
+	<verb inf = "respire" stem = "respi" conj = "re" en-1 = "breathe" en-3 = "" class = "facial"/>
+	<verb inf = "manger" stem = "mang" conj = "er" en-1 = "eat" en-3 = "" class = "facial"/>
+	
+	<verb inf = "dire" stem = "di" conj = "re" en-1 = "say" en-3 = "" class = "talk"/>
+	<verb inf = "crier" stem = "cri" conj = "er" en-1 = "shout" en-3 = "" class = "talk"/>
+	<verb inf = "rire" stem = "ri" conj = "re" en-1 = "laugh" en-3 = "" class = "talk"/>
+	
+	<verb inf = "aimer" stem = "aim" conj = "er" en-1 = "like" en-3 = "" class = "feelings"/>
+	<verb inf = "adorer" stem = "ador" conj = "er" en-1 = "adore" en-3 = "" class = "feelings"/>
+	<verb inf = "détester" stem = "détest" conj = "er" en-1 = "detest" en-3 = "" class = "feelings"/>
+	
+	
+	<verbpattern id = "er">
+		<indicative>
+			<present>
+				<sing fr-1 = "e" fr-2 = "es" fr-3 = "e"		en-1 = "" en-2 = "" en-3 = "s"/>
+				<plur fr-1 = "ons" fr-2 = "ez" fr-3 = "ent"	en-1 = "" en-2 = "" en-3 = ""/>
+			</present>
+		</indicative>
+	</verbpattern>
+	
+	<verbpattern id = "re">
+		<indicative>
+			<present>
+				<sing fr-1 = "s" fr-2 = "s" fr-3 = ""		en-1 = "" en-2 = "" en-3 = "s"/>
+				<plur fr-1 = "ons" fr-2 = "ez" fr-3 = "ent"	en-1 = "" en-2 = "" en-3 = ""/>
+			</present>
+		</indicative>
+	</verbpattern>
+	
+	<verbpattern id = "ir">
+		<indicative>
+			<present>
+				<sing fr-1 = "is" fr-2 = "is" fr-3 = "it"				en-1 = "" en-2 = "" en-3 = "s"/>
+				<plur fr-1 = "issons" fr-2 = "issez" fr-3 = "issent"	en-1 = "" en-2 = "" en-3 = ""/>
+			</present>
+		</indicative>
+	</verbpattern>
+	
+	<verb conj = "irregular" inf = "être" en-inf = "be" class = "be">
+		<indicative>
+			<present>
+				<sing fr-1 = "suis" fr-2 = "es" fr-3 = "est"		en-1 = "am" en-2 = "are" en-3 = "is"/>
+				<plur fr-1 = "sommes" fr-2 = "êtes" fr-3 = "sont"	en-1 = "are" en-2 = "are" en-3 = "are"/>
+			</present>
+		</indicative>
+	</verb>
+	
+	<verb conj = "irregular" inf = "avoir" en-inf = "have" class = "have">
+		<indicative>
+			<present>
+				<sing fr-1 = "ai" fr-2 = "as" fr-3 = "a"		en-1 = "have" en-2 = "have" en-3 = "has"/>
+				<plur fr-1 = "avons" fr-2 = "avez" fr-3 = "ont"	en-1 = "have" en-2 = "have" en-3 = "have"/>
+			</present>
+		</indicative>
+	</verb>
+	
+	<verb conj = "irregular" inf = "aller" en-inf = "go" class = "movement">
+		<indicative>
+			<present>
+				<sing fr-1 = "vais" fr-2 = "vas" fr-3 = "va"		en-1 = "go" en-2 = "go" en-3 = "goes"/>
+				<plur fr-1 = "allons" fr-2 = "allez" fr-3 = "vont"	en-1 = "go" en-2 = "go" en-3 = "go"/>
+			</present>
+		</indicative>
+	</verb>
+	
+	<verb conj = "irregular" inf = "faire" en-inf = "do" class = "do">
+		<indicative>
+			<present>
+				<sing fr-1 = "fais" fr-2 = "fais" fr-3 = "fait"			en-1 = "do" en-2 = "do" en-3 = "does"/>
+				<plur fr-1 = "faisons" fr-2 = "faites" fr-3 = "font"	en-1 = "do" en-2 = "do" en-3 = "do"/>
+			</present>
+		</indicative>
+	</verb>
+</data>'
+})();

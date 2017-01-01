@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Style.css" />
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+	
+	<script src="Earsy.js"></script>
+	
+	<link rel="stylesheet" href="themes/MyTheme.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	
+	<!---
+	
+	<script src = "jXML/French/French.xml" type="text/javascript;e4x=1" id = "xml-french"></script>
+	<script src = "jXML/French/Lessons.xml" type="text/javascript;e4x=1" id = "xml-lessons"></script>
+	<script src = "jXML/French/Vocab.xml" type="text/javascript;e4x=1" id = "xml-vocab"></script>
+	<script src = "jXML/French/QuickLesson.xml" type="text/javascript;e4x=1" id = "xml-QuickLesson"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	
+	--->
+	
+	<title></title>
+</head>
+<body>
+	<audio src = "" hidden></audio>
+	
+	<!-- MAIN PAGE -->
+<div data-role="page" id="welcome">
+  <div data-role="header">
+	<div class = "placeholder-title"></div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+	  <h3>Learning is Easy with <span class = "apptitle"></span>!</h3>
+	<div data-role="controlgroup" data-type="vertical">
+		<a href = "#mainmenu" class = "ui-btn">Begin</a>
+		<a href = "#help" class = "ui-btn">Help</a>
+		<a href = "#about" data-rel = "popup" class = "ui-btn">About</a>
+	</div>
+  </div>
+  
+  <div data-role="popup" id = "about">
+	<p><span class = "apptitle"></span> Language Learning, concept, design and programming by Daniel Kirk.</p>
+	<div class = "placeholder-copywrite"></div>
+  </div>
+
+  <div data-role="footer">
+	<div class = "stat-board"></div>
+	<div class = "placeholder-copywrite"></div>
+  </div>
+</div>
+
+	<!-- MENU PAGE -->
+<div data-role="page" id="mainmenu">
+  <div data-role="header">
+	<div class = "placeholder-title">Main Menu</div>
+  </div>
+  <div data-role="main" class="ui-content">
+	<div class = "ui-corners-all-a custom-corners">
+		
+	  <div class = "ui-bar ui-bar-a">
+	    <h3>Welcome <span class = "username"></span>, you're learning <span class = "languagename"></span>.</h3>
+	  </div>
+	  <div class = "ui-body ui-body-a">
+		<div data-role="controlgroup" data-type="vertical">
+			<a href = "#courselist" class = "ui-btn">Go to Courses</a>
+			<a href = "#quicklesson" class = "ui-btn">Take a Quicklesson</a>
+		</div>
+		<div data-role="controlgroup" data-type="vertical">
+			<a href = "#changeuser" class = "ui-btn">Change User</a>
+			<a href = "#changelanguage" class = "ui-btn">Change Language</a>
+		</div>
+  	  </div>
+	</div>
+  </div>
+
+  <div data-role="footer">
+	<div class = "navbar-min"></div>
+	<div class = "stat-board"></div>
+	<div class = "placeholder-copywrite"></div>
+  </div>
+</div>
+
+	<!-- HELP PAGE -->
+<div data-role="page" id="help">
+  <div data-role="header">
+	<div class = "placeholder-title">Help</div>
+  </div>
+  <div data-role="main" class="ui-content">
+
+	<div class = "">
+	  <p>
+		  Earsy is an mobile web-based app to boost your foreign language ability.
+		  Using Earsy you train your ears to understand the spoken words of another language.
+	  </p>
+	</div>
+	
+	<div class = "ui-body ui-body-a">
+
+		<div data-role = "collapsible">
+		  <h4>Introduction</h4>
+		  <p>
+			  The idea of Earsy is to get your brain used to hearing the sounds of a foreign language, dispensing entirely with spelling and text-based learning.
+			  By eschewing reading and writing skills we force your brain to learn vocabulary and grammar through sound, which is more practical for day-to-day use.
+			  You can choose to learn either through a Quick Lesson, which presents randomly selected sentences or phrases and asks you to identify them,
+			  or through the more structured lesson modules.
+		  </p>
+		</div>
+		
+		<div data-role = "collapsible">
+		  <h4>Using the Interface</h4>
+		  <p></p>
+		</div>
+			  
+		<div data-role = "collapsible">
+		  <h4>Lesson Structure</h4>
+		  <p></p>
+		</div>
+
+	</div>
+  </div>
+
+  <div data-role="footer">
+	<div class = "navbar-min"></div>
+	<div class = "stat-board"></div>
+	<div class = "placeholder-copywrite"></div>
+  </div>
+</div>
+
+	<!-- CHANGE LANGUAGE PAGE -->
+<div data-role="page" id="changelanguage">
+  <div data-role="header">
+	<div class = "placeholder-title">Change your Language</div>
+  </div>
+<p style = "text-align:center">Welcome to your language list <span class = "username"></span>, you're currently learning <span class = "languagename"></span>. Please select a new language to learn.</p>
+  <div data-role="main" class="ui-content">
+	<div data-role="controlgroup" data-type="vertical">
+		<a href = "#mainmenu" class = "ui-btn">French</a>
+		<a href = "#mainmenu" class = "ui-btn">Taiwanese</a>
+	</div>
+  </div>
+
+  <div data-role="footer">
+	<div class = "navbar-full"></div>
+	<div class = "stat-board"></div>
+	<div class = "placeholder-copywrite"></div>
+  </div>
+</div>
+
+	<!-- CHANGE USER PAGE -->
+<div data-role="page" id="changeuser">
+  <div data-role="header">
+	<div class = "placeholder-title">Change Current User</div>
+  </div>
+<p style = "text-align:center">Please select the current user.</p>
+  <div data-role="main" class="ui-content">
+	<select name="CU-changeuser" id="CU-changeuser">
+	  <option value="CU-user-0">Daniel Kirk</option>
+	</select>
+	<div data-role="controlgroup" data-type="vertical">
+		<button>New User</button>
+		<button>Delete User</button>
+	</div>
+  </div>
+
+  <div data-role="footer">
+	<div class = "navbar-full"></div>
+	<div class = "stat-board"></div>
+	<div class = "placeholder-copywrite"></div>
+  </div>
+</div>
+
+	<!-- COURSES PAGE -->
+<div data-role="page" id="courselist">
+  <div data-role="header">
+	<div class = "placeholder-title">Course List</div>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+    <!-- <p><a href = "#quicklesson" class = "ui-btn">Change User</a></p> -->
+	<div data-role="controlgroup" data-type="vertical">
+		<p style = "text-align:center">
+		Welcome to <span class = "apptitle"></span> <span class = "username"></span>, you're learning <span class = "languagename"></span>.
+		</p>
+		<div class = "ui-corners-all custom-corners">
+			<div class = "ui-bar ui-bar-a">
+			<h2>Your Couses</h2>
+			</div>
+			<div id = "CourseList" class = "ui-body ui-body-a">
+			  
+			</div>
+		</div>
+	</div>
+
+  </div>
+
+  <div data-role="footer">
+	<div class = "navbar-full"></div>
+	<div class = "stat-board"></div>
+	<div class = "placeholder-copywrite"></div>
+  </div>
+</div>
+
+
+
+	<!-- MODULE PAGE -->
+<div data-role="page" id="module">
+  <div data-role="header">
+	<h2 class = 'pagetitle'>Lesson List</h2>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+	  <input type = hidden id = "M-id"/>
+	  <div class = "ui-corners-all custom-corners">
+		  <div class = "ui-bar ui-bar-a">
+			  <h2 id = "ModuleTitle"></h2>
+			  </div>
+			  <div class = "ui-body ui-body-a">
+				  <div id = "LessonList" class = "ui-grid-b ui-responsive">
+				  
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  </div>
+
+  <div data-role="footer">
+  </div>
+</div>
+
+	<!-- LESSON PAGE -->
+<div data-role="page" id="lesson" data-theme = "a">
+  <div data-role="header">
+	<div class = "placeholder-title">Vocabulary Lesson</div>
+  </div>
+  <div data-role="main" class="ui-content">
+	<!-- Persistant Variables -->
+	<input type = hidden id = "L-id"/>
+	
+	<div id = "lessonInfoBox" class = "ui-corners-all custom-corners">
+		<div class = "ui-bar ui-bar-a">
+		<h2 id = "lessonInfoBox-title"></h2>
+		</div>
+		<div id = "lessonInfoBox-details" class = "ui-body ui-body-a">
+		  
+		</div>
+	</div>
+	
+	<div id = "VL-lesson" data-role = "collapsible-set">
+		
+	</div>
+  </div>
+
+  <div data-role="footer">
+	<div class = 'ui-body'>
+		<div data-role = 'navbar'>
+			<ul>
+				<li><a href = "#" id = "L-backToModule" class = 'ui-btn'>Back to Module</a></li>
+				<li><a href = '#welcome' class = 'ui-btn'>Back To Front Screen</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class = "stat-board"></div>
+	<div class = "placeholder-copywrite"></div>
+  </div>
+</div>
+
+
+	<!-- QUICKLESSON PAGE -->
+<div data-role="page" id="quicklesson" data-theme = "a">
+  <div data-role="header">
+	<div class = "placeholder-title">Quick Lesson</div>
+  </div>
+  <div data-role="main" class="ui-content">
+		<div class="ui-field-contain">
+		  <fieldset class = "ui-field-contain">
+			<select name="QL-lessontype" id="QL-lessontype" data-native-menu = "false" class = "ui-select ui-select-a">
+			  <option value="QL-random">All Types</option>
+			  <optgroup label="Identify">
+				<option value="find-noun">Identify the Noun</option>
+				<option value="find-noun">Identify the Pronoun</option>
+				<option value="find-verb">Identify the Verb</option>
+				<option value="find-number">Identify the Number</option>
+			  </optgroup>
+			  <optgroup label="Interpret">
+				<option value="find-info">Find Information</option>
+				<option value="find-time">Find the Time or Date</option>
+			  </optgroup>
+			  <optgroup label="Respond">
+				<option value="find-answer">Give the best response to the Question</option>
+			  </optgroup>
+			</select>
+		  </fieldset>
+		</div>
+	<div data-role = "controlgroup" data-type = "vertical">
+	</div>
+	
+	  
+	<div data-role = "controlgroup" data-type = "vertical">
+		<button id = "QL-playSound">Play</button>
+		<button id = "QL-playSound-slow">Play Slowly</button>
+		<h4 id = "QL-questiontext"></h4>
+	</div>
+	
+	<div data-role = "controlgroup" data-type = "vertical">
+		<a href = "#QL-result" data-rel="popup" class = "ui-btn QL-option" id = "QL-b1"></a>
+		<a href = "#QL-result" data-rel="popup" class = "ui-btn QL-option" id = "QL-b2"></a>
+		<a href = "#QL-result" data-rel="popup" class = "ui-btn QL-option" id = "QL-b3"></a>
+	</div>
+	
+	<div data-role = "popup" data-theme = "a" id = "QL-result" style = "max-width:300px;" class="ui-corner-all">
+		<div data-role="header" class="ui-corner-top" data-theme = "a">
+			<h1>Quick Lesson</h1>
+		</div>
+		<div data-role="content" class="ui-corner-bottom ui-content" data-theme = "a">
+			<h3 class = "ui-title" id = "QL-result-headertext"></h3>
+			<p id = "QL-result-messagetext"></p>
+		</div>
+	</div>
+	<div data-role = "controlgroup" data-type = "vertical">
+		<button id = "QL-skip-question">Skip Question</button>
+	</div>
+	
+  </div>
+
+  <div data-role="footer">
+	<div class = "navbar-full"></div>
+	<div class = "stat-board"></div>
+	<div class = "placeholder-copywrite"></div>
+  </div>
+</div>
+
+</body>
+</html>

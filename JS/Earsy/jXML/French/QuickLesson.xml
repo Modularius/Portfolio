@@ -1,0 +1,246 @@
+//(function(){<?xml version="1.0" encoding="utf-8" ?>
+xmlCache["quick"] = <data>
+	<question class = "find-noun find-pronoun">
+		<sentence>
+			<parse id = "1"><pronoun/> <verb inf = "manger"/></parse>
+			<parse id = "2" type = "par"><article/> <noun class = "food"/></parse>
+		</sentence>
+		<sentence>
+			<parse id = "1"><pronoun/> <verb inf = "détester"/></parse>
+			<parse>des aliments, mais</parse>
+			<parse src = "1"><pronoun/> <verb inf = "manger"/></parse>
+			<parse id = "2" type = "par"><article/> <noun class = "food"/></parse>
+		</sentence>
+		<game class = "find-noun">
+			<instructions>What is the food being eaten?</instructions>
+			<ans>
+				<parse src = "2"><article/> <noun/></parse>
+			</ans>
+		</game>
+		<game class = "find-pronoun">
+			<instructions>Identify the pronoun.</instructions>
+			<ans>
+				<parse src = "1"><pronoun/></parse>
+			</ans>
+		</game>
+	</question>
+</data>;/*
+	<!--
+	<lesson type = "QL-id-pronoun">
+		<instruction>Identify the Pronoun</instruction>
+		<false>Je</false>
+		<false>Tu</false>
+		<false>Il</false>
+		<false>Elle</false>
+		<false>Nous</false>
+		<false>Vous</false>
+		<false>Ils</false>
+		<false>Elles</false>
+		
+		<qblock>
+		<question> <q>Je ne suis pas des pomme</q> <ans>Je</ans> </question>
+		<question> <q>Tu n'as pas des pomme</q> <ans>Tu</ans> </question>
+		<question> <q>Il n'a pas des pomme</q> <ans>Il</ans> </question>
+		<question> <q>Elle n'a pas des pomme</q> <ans>Elle</ans> </question>
+		<question> <q>Nous ne sommes pas des pomme</q> <ans>Nous</ans> </question>
+		<question> <q>Vous n'êtes pas des pomme</q> <ans>Vous</ans> </question>
+		<question> <q>Ils ne sont pas des pomme</q> <ans>Ils</ans> </question>
+		<question> <q>Elles ne sont des pomme</q> <ans>Elles</ans> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>J'aime qu'est-ce que je parle</q> <ans>Je</ans> </question>
+		<question> <q>T'aimes qu'est-ce que tu parles</q> <ans>Tu</ans> </question>
+		<question> <q>Il aime qu'est-ce que il parle</q> <ans>Il</ans> </question>
+		<question> <q>Ell'aime qu'est-ce que elle parle</q> <ans>Elle</ans> </question>
+		<question> <q>Nous aimons qu'est-ce que nous parlons</q> <ans>Nous</ans> </question>
+		<question> <q>Vous aimez qu'est-ce que vous parlez</q> <ans>Vous</ans> </question>
+		<question> <q>Ils aiment qu'est-ce que ils parlent</q> <ans>Ils</ans> </question>
+		<question> <q>Elles aiment qu'est-ce que elles parlent</q> <ans>Elles</ans> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>Je suis tres bonheur</q> <ans>Je</ans> </question>
+		<question> <q>Tu es tres bonheur</q> <ans>Tu</ans> </question>
+		<question> <q>Il est tres bonheur</q> <ans>Il</ans> </question>
+		<question> <q>Elle est tres bonheur</q> <ans>Elle</ans> </question>
+		<question> <q>Nous sommes tres bonheur</q> <ans>Nous</ans> </question>
+		<question> <q>Vous êtes tres bonheur</q> <ans>Vous</ans> </question>
+		<question> <q>Ils sont tres bonheur</q> <ans>Ils</ans> </question>
+		<question> <q>Elles sont tres bonheur</q> <ans>Elles</ans> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>Je parle quand nous veux</q> <ans>Je</ans> </question>
+		<question> <q>Tu parles quand tu veux</q> <ans>Tu</ans> </question>
+		<question> <q>Il parle quand il veut</q> <ans>Il</ans> </question>
+		<question> <q>Elle parle quand elle veut</q> <ans>Elle</ans> </question>
+		<question> <q>Nous parlons quand nous voulons</q> <ans>Nous</ans> </question>
+		<question> <q>Vous parlez quand vous voulez</q> <ans>Vous</ans> </question>
+		<question> <q>Ils parlent quand ils veulent</q> <ans>Ils</ans> </question>
+		<question> <q>Elles parlent quand elles veulent</q> <ans>Elles</ans> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>Je dis "Bonjour"</q> <ans>Je</ans> </question>
+		<question> <q>Tu dis "Bonjour"</q> <ans>Tu</ans> </question>
+		<question> <q>Il dit "Bonjour"</q> <ans>Il</ans> </question>
+		<question> <q>Elle dit "Bonjour"</q> <ans>Elle</ans> </question>
+		<question> <q>Nous disons "Bonjour"</q> <ans>Nous</ans> </question>
+		<question> <q>Vous dites "Bonjour"</q> <ans>Vous</ans> </question>
+		<question> <q>Ils dirant "Bonjour"</q> <ans>Ils</ans> </question>
+		<question> <q>Elles dirant "Bonjour"</q> <ans>Elles</ans> </question>
+		</qblock>
+	</lesson>
+	
+	<lesson type = "QL-id-pronoun">
+		<instruction>Identify ALL the Pronouns</instruction>
+		<false>Je</false>
+		<false>Tu</false>
+		<false>Il</false>
+		<false>Elle</false>
+		<false>Nous</false>
+		<false>Vous</false>
+		<false>Ils</false>
+		<false>Elles</false>
+		
+		<qblock>
+		<question> <q>Je suis perdu</q> <ans>Je</ans> </question>
+		<question> <q>Tu es perdu</q> <ans>Tu</ans> </question>
+		<question> <q>Il est perdu</q> <ans>Il</ans> </question>
+		<question> <q>Elle est perdue</q> <ans>Elle</ans> </question>
+		<question> <q>Nous sommes perdus</q> <ans>Nous</ans> </question>
+		<question> <q>Vous etes perdu</q> <ans>Vous</ans> </question>
+		<question> <q>Ils sont perdus</q> <ans>Ils</ans> </question>
+		<question> <q>Elles sont perdues</q> <ans>Elles</ans> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>Je m'appelle</q> <ans>Je</ans> </question>
+		<question> <q>Tu t'appelles</q> <ans>Tu</ans> </question>
+		<question> <q>Il s'appelle</q> <ans>Il</ans> </question>
+		<question> <q>Elle s'appelle</q> <ans>Elle</ans> </question>
+		<question> <q>Nous sommes perdus</q> <ans>Nous</ans> </question>
+		<question> <q>Vous vous appellez</q> <ans>Vous</ans> </question>
+		<question> <q>Ils se appelés</q> <ans>Ils</ans> </question>
+		<question> <q>Elles sa appelés</q> <ans>Elles</ans> </question>
+		</qblock>
+	</lesson>
+	
+	<lesson type = "QL-id-verb" mode = "question">
+		<instruction>Identify the Verb</instruction>
+		<qblock>
+			<question>
+				<q><parse id = "verb"><pronoun/> <verb stem = "mang" class = "not"/> </parse> <parse><article class = "par"/> <noun category = "food"/>.</parse></q><ans src = "verb">To <verb/></ans>
+			</question>
+			<question>
+				<q><parse><pronoun/> <word type = "verb" stem = "mang" pronoun = "true" neg = "true"/> <noun article = "par" category = "food"/>.</parse></q><ans>To Not Eat</ans>
+			</question>
+		</qblock>
+	</lesson>
+	
+	<lesson type = "QL-id-verb">
+		<instruction>Identify the Verb</instruction>
+		<false>To Eat</false>
+		<false>To Be</false>
+		<false>To Be Able</false>
+		<false>To Have</false>
+		<false>To Say</false>
+		<false>To Speak</false>
+		<false>To Go</false>
+		<false>To Do</false>
+		<false>To Walk</false>
+		<false>To Like</false>
+		<false>To Love</false>
+		<false>To Not Do</false>
+		<false>To Not Be</false>
+		<false>To Not Be Able</false>
+		
+		<qblock>
+		<question> <q>Je ne mange pas de viende?</q> <ans>To Not Eat</ans> </question>
+		<question> <q>Tu ne manges pas de viende?</q> <ans>To Not Eat</ans> </question>
+		<question> <q>Il ne mange pas de viende?</q> <ans>To Not Eat</ans> </question>
+		<question> <q>Elle ne mange pas de viende?</q> <ans>To Not Eat</ans> </question>
+		<question> <q>Vous ne mangez pas de viende?</q> <ans>To Not Eat</ans> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>Qu'est ce que mangez-vous?</q> <ans>To Eat</ans> </question>
+		<question> <q>Qu'est ce que manges-tu?</q> <ans>To Eat</ans> </question>
+		<question> <q>Qu'est ce que mange-je?</q> <ans>To Eat</ans> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>T'aimes ce que je dis</q> <ans>To Like</ans> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>Il l'adore</q> <ans>To Love</ans> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>Je vais avec mon chien</q> <ans>To Go</ans> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>Qu'est ce que tu fais</q> <ans>To Do</ans> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>Qu'est ce que vous faites</q> <ans>To Do</ans> </question>
+		</qblock>
+	</lesson>
+	
+	<lesson type = "QL-re-question">
+		<instruction>Give the most appropriate english answer to the french question</instruction>
+		<false>I am thirty five</false>
+		<false>My name is Hannah</false>
+		<false>Today is Wednesday</false>
+		<false>Yes, I am angry</false>
+		<false>Purple</false>
+		<false>No, I/we have not seen it</false>
+		<false>No, I have not seen it</false>
+		
+		<qblock>
+		<question> <q>Combien d'ans avez-vous?</q> <ans>I am thirty five</ans> <yes>y</yes><no>n</no> </question>
+		<question> <q>Combien d'années avez-vous?</q> <ans>I am thirty five</ans> <yes>y</yes><no>n</no> </question>
+		<question> <q>Quel âge as-tu?</q> <ans>I am thirty five</ans> <yes>y</yes><no>n</no> </question>
+		<question> <q>Quel âge avez-vous?</q> <ans>I am thirty five</ans> <yes>y</yes><no>n</no> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>Avez-vous vu mon chien?</q> <ans>No, I/we have not seen it</ans> <yes>y</yes><no>n</no> </question>
+		<question> <q>As-tu vu mon chien?</q> <ans>No, I have not seen it</ans> <yes>y</yes><no>n</no> </question>
+		<question> <q>Avez-vous vu ce nouveau film?</q> <ans>No, I have not seen it</ans> <yes>y</yes><no>n</no> </question>
+		<question> <q>Savez-vous où est mon chapeau?</q> <ans>No, I have not seen it</ans> <yes>y</yes><no>n</no> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>Comment vous appelez-vous</q> <ans>My name is Hannah</ans> <yes>What do you call yourself?</yes> <no>Hint: "appelez-vous"</no> </question>
+		<question> <q>Quel est ton nom?</q> <ans>My name is Hannah</ans> <yes>What is your name?</yes> <no>Hint: "ton nom"</no>  </question>
+		<question> <q>Quel est votre nom?</q> <ans>My name is Hannah</ans> <yes>What is your name?</yes> <no>Hint: "votre nom"</no>  </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>Quelle est la couleur de la robe?</q> <ans>Purple</ans> <yes>What is the colour of the dress?</yes><no>n</no> </question>
+		<question> <q>Quelle est la couleur du pantalon?</q> <ans>Purple</ans> <yes>What is the colour of the trousers?</yes><no>n</no> </question>
+		<question> <q>Quelle est la couleur de la petite jupe?</q> <ans>Purple</ans> <yes>What is the colour of the small skirt?</yes><no>n</no> </question>
+		<question> <q>De quelle couleur voulez-vous?</q> <ans>Purple</ans> <yes>What colour do you want?</yes><no>n</no> </question>
+		<question> <q>Qu'est ce-que couleur de manteau voulez-vous?</q> <ans>Purple</ans> <yes>What colour coat do you want?</yes><no>n</no> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>Es-tu en colère?</q> <ans>Yes, I am angry</ans> <yes>Are you angry?</yes><no>Hint: choleric</no> </question>
+		<question> <q>Avez-vous en colère?</q> <ans>Yes, I am angry</ans> <yes>Are you angry?</yes><no>Hint: choleric</no> </question>
+		</qblock>
+		
+		<qblock>
+		<question> <q>Quel jour sommes-nous aujourd'hui?</q> <ans>Today is Wednesday</ans> <yes>What day are we today?</yes><no>Hint: aujourd-hui</no> </question>
+		<question> <q>Est-ce Mardi?</q> <ans>Today is Wednesday</ans> <yes>Is it Tuesday?</yes><no>Hint: "Mardi"</no> </question>
+		<question> <q>Est-ce le weekend?</q> <ans>Today is Wednesday</ans> <yes>Is it the weekend?</yes><no>Hint: "Est-ce"</no> </question>
+		</qblock>
+	</lesson>
+	<lesson type = "QL-re-question">
+	</lesson>
+	-->
+})();*/

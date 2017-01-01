@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<!--
+		Household Objects
+				-->
+	<lesson id = "HouseholdObjects1" name = "Household Objects" details = "Test your knowledge of French household words" parent = "NounsAndPronouns">
+		<exercise type = "learn" learntype = "learnlist" count = "8" repeat = "false">
+			<learnlist wordtype = "noun" categories = "furniture" articles = "def indef par" numbers = "s p"/>
+			<title>Furniture</title>
+		</exercise>
+		
+		<exercise type = "quiz" quiztype = "random words" count = "6" repeat = "false">
+			<sentence><parse number = "sing"><noun category = "furniture"/></parse></sentence>
+			<title>Furniture (singular)</title>
+		</exercise>
+		
+		<exercise type = "quiz" quiztype = "random words" count = "6" repeat = "false">
+			<sentence><parse type = "def"><article/> <noun category = "furniture"/></parse></sentence>
+			<title>Rooms and Furniture (singular/plural)</title>
+		</exercise>
+		
+		<exercise type = "quiz" quiztype = "random words" count = "6" repeat = "false">
+			<sentence><parse type = "def indef"><article/> <noun category = "furniture"/></parse></sentence>
+			<title>Rooms and Furniture (with articles)</title>
+		</exercise>
+		
+		<exercise type = "quiz" quiztype = "random words" count = "9" repeat = "false">
+			<sentence><parse><article/> <noun category = "furniture"/></parse></sentence>
+			<title>Rooms and Furniture (with articles and gender)</title>
+		</exercise>
+	</lesson>
+	
+	<!--
+		People
+				-->
+	<lesson id = "People1" name = "People 1" details = "Test your knowledge of French people" parent = "NounsAndPronouns">
+		<exercise type = "quiz" quiztype = "random words" count = "18" repeat = "false">
+			<quiz wordtype = "noun" categories = "people" articles = "def indef par" numbers = "s p"/>
+			<title>People (with articles and gender)</title>
+			<gender/>
+		</exercise>
+	</lesson>
+	
+	<!--
+		Food
+				-->
+	<lesson id = "Food1" name = "Food 1" details = "Test your knowledge of French food words" parent = "NounsAndPronouns">
+		<exercise type = "quiz" quiztype = "random words" count = "18" repeat = "false">
+			<quiz wordtype = "noun" categories = "food" articles = "def indef par" numbers = "s p"/>
+			<title>Food (with articles and gender)</title>
+			<gender/>
+		</exercise>
+	</lesson>
+	
+	<!--
+		Plurals
+				-->
+	<lesson id = "Plurals1" name = "Plurals 1" details = "Test your knowledge of French food words" parent = "NounsAndPronouns">
+		<exercise type = "quiz" quiztype = "random words" count = "18" repeat = "false">
+			<quiz wordtype = "noun" categories = "" articles = "def indef par" numbers = "p"/>
+			<title>All categories of plurals</title>
+		</exercise>
+		<exercise type = "quiz" quiztype = "random words" count = "12" repeat = "true">
+			<quiz wordtype = "noun" categories = "irreg-plur" articles = "def indef par" numbers = "s p"/>
+			<title>Nouns with Irregular Plurals</title>
+		</exercise>
+	</lesson>
+	
+	<!--
+		Numbers
+				-->
+	<lesson id = "NumberVocab1" name = "Number Vocab 1" details = "Learn French numbers" parent = "Numbers">
+		<exercise type = "learn">
+				<en>The numbers 1 to 5</en>
+				<fr>1, 2, 3, 4, 5</fr>
+		</exercise>
+		
+		<exercise type = "learn">
+				<en>The numbers 6 to 10</en>
+				<fr>6, 7, 8, 9, 10</fr>
+		</exercise>
+		
+		<exercise type = "quiz" quiztype = "random numbers" count = "12" repeat = "false">
+			<quiz from = "1" to = "12"/>
+			<title>The numbers from 1 to 12</title>
+		</exercise>
+		
+		<exercise type = "quiz" quiztype = "random numbers" count = "12" repeat = "false">
+			<quiz from = "1" to = "100"/>
+			<title>The numbers from 1 to 100</title>
+		</exercise>
+		
+		<exercise type = "quiz" quiztype = "random numbers" count = "9" repeat = "false">
+			<quiz from = "10" to = "200" multiples = "10"/>
+			<title>The tens from 10 to 200</title>
+		</exercise>
+	</lesson>
+	
+	<lesson id = "Intros2" name = "Introductions" details = "Select the most appropriate answer to the following questions" parent = "EverydayConvos">
+		<exercise type = "conversation">
+			<title>Meeting a New Person</title>
+			
+			<randomglobal id = "name"><g>Alan</g><g>Betty</g><g>Freddie</g><g>Chantelle</g><g>Charlotte</g><g>Pierre</g></randomglobal>
+			<randomglobal id = "country"><g>Angleterre</g><g>France</g><g><pl/>États-Unis</g></randomglobal>
+			<randomglobal id = "age"><g>25</g><g>18</g><g>53</g></randomglobal>
+			<randomglobal id = "duration"><g>une semaine</g><g>deux semaines</g><g>trois jours</g></randomglobal>
+			<qna answers = "3">
+				<question>Bonjour. <op>Comment t'appelles tu|Comment vous appellez vous|Quel est ton nom|Quel est votre nom|Qui est-tu|Qui êtes-vous</op>?</question>
+				<answer><op>Je <word type = "verb" ans = "suis"/>|Mon nom <word type = "verb" ans = "est"/>|Je <word type = "verb" ans = "suis"/> appelé</op> <global name = "name"/>.</answer>
+				<falseans><op>J'ai vingt pommes.|J'aime les gros culs|Je suis chaud</op></falseans>
+				<correct>Salut <global name = "name"/>!</correct>
+			</qna>
+			<qna answers = "4">
+				<question><op>De quel pays viens-tu|De quel pays venez-vous|Où êtes-vous né|Où es-tu né</op>?</question>
+				<answer>Je <word type = "verb" ans = "viens"/> <parse><if search = "pl" yes = "des" no = "de"/> <global name = "country"/></parse>.</answer>
+				<falseans><op>J'ai quarante ans|Tu es adorable|J'ai peur</op>.</falseans>
+				<correct><parse><global name = "country"/> <if search = "pl" yes = "sont belles" no = "est belle"/></parse>!</correct>
+			</qna>
+			<qna answers = "4">
+				<question>Quel <op>âge avez-vous|âge as-tu|est votre âge|est ton âge</op>?</question>
+				<answer><op>Je <word type = "verb" ans = "suis"/> <global name = "age"/>|Je <word type = "verb" ans = "suis"/> <global name = "age"/> ans|J'<word type = "verb" ans = "ai"/> <global name = "age"/> ans</op>.</answer>
+				<falseans><op>Je t'aime|Elles aiment ton chapeau|Je suis en colère</op>.</falseans>
+				<correct>Vous êtes âgé de <global name = "age"/> ans!</correct>
+			</qna>
+			<qna answers = "4">
+				<question><op>Combien du temps restes-tu|Combien du temps restez-vous|Quand vas-tu revenir|Quand allez-vous revenir</op>?</question>
+				<answer><op>Je <word type = "verb" ans = "reste"/> pendant <global name = "duration"/>|Je <word type = "verb" ans = "reviens"/> dans <global name = "duration"/>|Je <verb ans = "pars"/> dans <global name = "duration"/></op>.</answer>
+				<falseans><op>Je veux d'un verre|Elles tombent|J'ai vraiment peur</op>.</falseans>
+				<correct>Bonne visite <global name = "name"/>!</correct>
+			</qna>
+		</exercise>
+		
+		<exercise type = "conversation">
+			<title>Arranging a Meeting</title>
+			<qna answers = "5">
+				<question>Bonjour. <op>Puis-je vous parler parfois?|Êtes-vous libre de parler parfois?|Es-tu libre de parler parfois?|Je veux vous parler parfois.</op></question>
+				<answer>Oui. <op>Je <word type = "verb" ans = "suis"/> libre de <word type = "verb" ans = "parler"/> demain|J'ai le temps de vous <word type = "verb" ans = "pareler"/> demain|Demain <verb ans = "est"/> une bonne journée pour nous de parler</op>.</answer>
+				<falseans><op>J'ai vingt pommes.|J'aime les gros culs|Je suis chaud</op></falseans>
+				<correct>Demain est bon.</correct>
+			</qna>
+		</exercise>
+	</lesson>
+</data>
